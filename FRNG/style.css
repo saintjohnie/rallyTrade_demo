@@ -1,0 +1,373 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: bolder;
+}
+.menu li {
+  float: right;
+  margin-top: 20px;
+  border-right: 3px solid black;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+.menu2 li {
+  float: right;
+  margin-top: 20px;
+  border-right: 3px solid black;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+.menu li a:hover,
+.menu2 li a:hover {
+  color: white;
+  background: black;
+  padding: 5px;
+}
+.menu li:nth-child(1) {
+  border: none;
+}
+.menu2 li:nth-child(1) {
+  border: none;
+}
+.logo {
+  margin: 20px;
+  flex: 0 1 150px;
+}
+.logo div {
+  width: 100%;
+  margin: auto;
+}
+.logo-img {
+  width: 100%;
+}
+.banner {
+  background-image: url("./images/banner600.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  min-width: 100%;
+}
+nav .menu-btn {
+  display: none;
+}
+.sign_up {
+  background: gray;
+  border-radius: 20px;
+  width: 90%;
+  border-bottom: 2px solid rgb(170, 168, 168);
+}
+.format {
+  width: 90%;
+  padding: 10%;
+
+  padding-right: 0;
+}
+.format h4 {
+  font-size: 0.9rem;
+}
+.sign_detail {
+  background: white;
+  border-radius: 0 10px 10px 0px;
+  padding: 10%;
+}
+.sign_detail input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-bottom: 2px solid black;
+  width: 100%;
+  margin-bottom: 10px;
+  outline: none;
+}
+.sign_up_head {
+  display: flex;
+}
+.sign_up_h1 {
+  background: white;
+  border-radius: 20px 70px 10px 0;
+  padding: 10px;
+  flex: 0 0 40%;
+}
+.sign_up_h2 {
+  border-radius: 10px;
+  padding: 10px;
+}
+.agreement {
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 0.7rem;
+  text-align: justify;
+  justify-content: space-between;
+}
+.agreement input {
+  margin-right: 10px;
+}
+.acctype_currency {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.o_acc {
+  padding-top: 10px;
+}
+
+.o_acc a {
+  width: 50px;
+  background: rgb(3, 90, 3);
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  margin-left: 33%;
+}
+.sell_point {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 0.7rem;
+  font-weight: bolder;
+}
+.sell_point ul {
+  display: flex;
+  padding-bottom: 10%;
+  justify-content: center;
+}
+.sell_point ul li img {
+  width: 45;
+  height: 45px;
+}
+.sell_point ul li {
+  padding: 15px;
+}
+.product_contact {
+  background: rgb(245, 244, 244);
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 5% 1% 10%;
+  font-style: italic;
+}
+.products {
+  padding-top: 20px;
+  border-right: 2px solid black;
+  padding-right: 13%;
+}
+.products ul li {
+  padding-top: 10px;
+}
+.contact {
+  text-align: right;
+  float: right;
+  padding-right: 20px;
+  font-weight: bold;
+  font-size: small;
+}
+.contact ul li {
+  padding-bottom: 8px;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8rem;
+}
+footer h1 {
+  color: rgb(236, 9, 9);
+}
+footer p {
+  margin: 2%;
+}
+
+.menu-icon,
+#menutoggle,
+.menu-icon2,
+#menutoggle2 {
+  display: none;
+}
+
+@media only screen and (max-width: 990px) {
+  .menu-icon {
+    display: block;
+    margin: 3%;
+    cursor: pointer;
+    font-weight: bolder;
+  }
+  .menu li:hover,
+  .menu2 li:hover {
+    color: white;
+    background: black;
+    padding: 5px;
+  }
+  .hide-menu {
+    top: 15px;
+    left: 40px;
+    display: none;
+    opacity: 0;
+    transition: opacity 5s ease-in-out;
+    background: rgba(199, 199, 199, 0.918);
+  }
+  #menutoggle:checked + ul {
+    display: block;
+    float: none;
+    opacity: 1;
+    width: 95%;
+    order: 2;
+    position: absolute;
+    transition: opacity 5s ease-in-out;
+  }
+  .logo {
+    order: 1;
+  }
+  .menu2 {
+    order: 3;
+  }
+  .menu li {
+    float: none;
+    margin-top: 20px;
+    border: none;
+    padding: 0 10px;
+    text-transform: uppercase;
+  }
+  .sell_point ul {
+    padding-bottom: 5%;
+  }
+  nav {
+    justify-content: space-between;
+  }
+
+  nav .menu-btn {
+    display: none;
+  }
+  .format {
+    width: 100%;
+    padding-top: 10;
+  }
+  .sign_up {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .banner {
+    grid-template-columns: 90%;
+  }
+
+  .sell_point ul {
+    width: 90%;
+    margin-left: 13%;
+  }
+  .sell_point li {
+    padding: 10%;
+  }
+  .product_contact {
+    display: inline-block;
+    width: 100%;
+  }
+  .products {
+    border: none;
+    padding: 3%;
+    margin: auto;
+    border-bottom: 2px solid black;
+    padding-bottom: 50px;
+  }
+  .contact {
+    width: 100%;
+    padding-top: 10px;
+  }
+  .contact ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .contact li {
+    padding: 20px;
+  }
+
+  .format {
+    width: 100%;
+    margin: auto;
+    padding: none;
+  }
+  .sign_up {
+    width: 100%;
+  }
+
+  .contact h3 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .menu-icon2 {
+    display: block;
+    margin: 3%;
+    cursor: pointer;
+    font-weight: bolder;
+  }
+  .menu2 {
+    float: none;
+    display: none;
+    transform: translate(-10px, 10px);
+    transition: transform 5s ease-in-out;
+    background: rgba(199, 199, 199, 0.918);
+  }
+  #menutoggle2:checked + ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 95%;
+    order: 0;
+    position: absolute;
+  }
+  .menu2 li {
+    border: none;
+    text-align: right;
+  }
+  .logo {
+    order: 1;
+  }
+  .menu-icon2 {
+    order: 2;
+  }
+  .banner {
+    grid-template-columns: 90%;
+  }
+  .contact ul {
+    display: grid;
+    grid-template-columns: 90%;
+    text-align: center;
+  }
+  .sell_point ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-left: 20%;
+    text-align: center;
+  }
+  .o_acc a {
+    margin-left: 29%;
+  }
+  .acctype_currency {
+    display: inline-block;
+  }
+  .acctype_currency div {
+    padding: 10px;
+  }
+  .acctype_currency div input:last-child {
+    margin-left: 15px;
+  }
+  .logo {
+  flex: 0 1 250px;
+}
+}
